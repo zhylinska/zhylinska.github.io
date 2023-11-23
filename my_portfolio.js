@@ -7,9 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     enableLangSwitcher('enLangSwitcher');
     enableLangSwitcher('deLangSwitcher');
-    $(".slider-container").slick({
-        autoplay: true,
-    });
+    $(".slider-container").slick();
 
     $(".slick-prev").text("❮");
     $(".slick-next").text("❯");
