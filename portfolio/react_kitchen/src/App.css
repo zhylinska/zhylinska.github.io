@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #262222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding-top: 5rem;
+    font-family: "Oswald", sans-serif;
+}
+
+/*header*/
+.headerContainer {
+    position: relative;
+    z-index: 2;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navBlock {
+    display: flex;
+    flex-direction: row;
+}
+
+.navItem {
+    padding: 0 1.5rem;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navItem:hover {
+    color: red;
+}
+ul {
+    font-weight: normal;
+    display: none;
+    position: absolute;
+    background: white;
+    text-align: left;
+    list-style: none;
+    left: -0.5rem;
+}
+
+.menuItem {
+    list-style: none;
+    white-space: nowrap;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    color: #241f1f;
+}
+
+.navItem:hover ul {
+    display: block;
+}
+
+.ref {
+    text-decoration: none;
+    color: #241f1f;
+}
+
+.menuItem:hover {
+    background: #b9b6b6;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.basketCounter {
+    position: relative;
+}
+
+.inBasket {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 1rem 2rem;
+    top: 2rem;
+    left: -0.5rem;
+}
+
+.basketCounter:hover .inBasket {
+    display: flex;
+    flex-direction: column;
+}
+
+.basketItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.delete {
+    color: red;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+}
+
+
+/*showcase*/
+.showcaseContainer {
+    width: 1600px;
+    height: 70vh;
+    margin: 3rem auto;
+    background: black;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    max-width: 350px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.showcaseText {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+    background: transparent;
+    border: transparent;
+    margin-left: 1rem;
+}
+
+
+/*products*/
+.productCardContainer {
+    width: 1600px;
+    height: 70vh;
+    margin: 0 auto 3rem auto;
+    background: transparent;
+    position: relative;
+}
+
+.productCardText {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    cursor: pointer;
+}
+
+.productCardBasketContainer {
+    max-width: 300px;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.productCardBasket {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: #241f1f;
+    padding: 10px 11px 4px 9px;
+    border-radius: 50%;
+    border: solid 2px #e6dfdf;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.add_to_basket {
+    position: absolute;
+    top: 3.5rem;
+    right: 5.5rem;
+    white-space: nowrap;
+    display: none;
+    font-size: 1rem;
+}
+.productCardBasket:hover {
+    color: red;
+}
+.productCardBasketContainer:hover .add_to_basket {
+    display: block;
+}
+
+.basketCounter {
+    display: flex;
+    flex-direction: row;
+}
+
+.basketNumber {
+    font-size: 1rem;
+}
+
+
+/*slider*/
+.sliderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderImg {
+    width: 1200px;
+    height: 50vh;
+}
+
+.arrow {
+    height: max-content;
+    padding: 1rem;
+    margin: 0 2rem;
+    border-radius: 50%;
+    border: transparent;
+    cursor: pointer;
+}
+
+
+/*questions*/
+.questionsContainer {
+    border: solid 1px whitesmoke;
+    width: max-content;
+    margin: 3rem auto;
+}
+
+.questionCard {
+    padding: 1rem 5rem;
+    border: solid 1px whitesmoke;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*footer*/
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background: whitesmoke;
+    color: #241f1f;
+}
+
+.contactIcon {
+    font-size: 2rem;
+    padding-left: 1rem;
+}

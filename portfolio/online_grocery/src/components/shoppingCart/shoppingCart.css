@@ -1,0 +1,34 @@
+
+.basket {
+    position: relative;
+}
+.basket:hover .basketItems {
+    display: block;
+}
+.basketCount {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.basketItem {
+    min-width: 200px;
+    display: grid;
+   grid-template-columns: 10fr 1fr 5fr;
+    gap: 1rem;
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.basketItems {
+    display: none;
+    position: absolute;
+    background: whitesmoke;
+    right: -0.7rem;
+    top: 2.5rem;
+    padding: 1.3rem;
+}
+.basketTotal {
+    padding-top: 1rem;
+}
+

@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+* body {
+  font-family: "Metropolis", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1rem;
+  background: #070707;
+  color: #FFFFFF;
+}
+* body #scroll .scroll-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+* body #scroll .scroll-container .scroll {
+  flex: 0 0 auto;
+}
+* body #scroll .scroll-container .scroll-one, * body #scroll .scroll-container .scroll-two, * body #scroll .scroll-container .scroll-three {
+  width: 100vw;
+}
+* body #scroll .scroll-container .scroll-one .compact, * body #scroll .scroll-container .scroll-two .compact, * body #scroll .scroll-container .scroll-three .compact {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+* body #scroll .scroll-container .scroll-one .compact .nav, * body #scroll .scroll-container .scroll-two .compact .nav, * body #scroll .scroll-container .scroll-three .compact .nav {
+  display: flex;
+  padding: 0.5rem 3rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+* body #scroll .scroll-container .scroll-one .compact .nav .logo, * body #scroll .scroll-container .scroll-two .compact .nav .logo, * body #scroll .scroll-container .scroll-three .compact .nav .logo {
+  float: left;
+}
+* body #scroll .scroll-container .scroll-one .compact .nav .burger-menu, * body #scroll .scroll-container .scroll-two .compact .nav .burger-menu, * body #scroll .scroll-container .scroll-three .compact .nav .burger-menu {
+  display: none;
+}
+* body #scroll .scroll-container .scroll-one .compact .nav .navbar, * body #scroll .scroll-container .scroll-two .compact .nav .navbar, * body #scroll .scroll-container .scroll-three .compact .nav .navbar {
+  float: right;
+}
+* body #scroll .scroll-container .scroll-one .compact .nav .navbar ul, * body #scroll .scroll-container .scroll-two .compact .nav .navbar ul, * body #scroll .scroll-container .scroll-three .compact .nav .navbar ul {
+  list-style: none;
+}
+* body #scroll .scroll-container .scroll-one .compact .nav .navbar ul li, * body #scroll .scroll-container .scroll-two .compact .nav .navbar ul li, * body #scroll .scroll-container .scroll-three .compact .nav .navbar ul li {
+  display: inline-block;
+  padding: 1.5rem 0 0 1.5rem;
+}
+* body #scroll .scroll-container .scroll-one .compact .nav .navbar ul li a, * body #scroll .scroll-container .scroll-two .compact .nav .navbar ul li a, * body #scroll .scroll-container .scroll-three .compact .nav .navbar ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+* body #scroll .scroll-container .scroll-one .compact .nav .navbar ul li a:hover, * body #scroll .scroll-container .scroll-two .compact .nav .navbar ul li a:hover, * body #scroll .scroll-container .scroll-three .compact .nav .navbar ul li a:hover {
+  font-weight: bold;
+}
+* body #scroll .scroll-container .scroll-one .compact .scroll-info, * body #scroll .scroll-container .scroll-two .compact .scroll-info, * body #scroll .scroll-container .scroll-three .compact .scroll-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 3rem;
+  position: relative;
+}
+* body #scroll .scroll-container .scroll-one .compact .scroll-info .scroll-text, * body #scroll .scroll-container .scroll-two .compact .scroll-info .scroll-text, * body #scroll .scroll-container .scroll-three .compact .scroll-info .scroll-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+* body #scroll .scroll-container .scroll-one .compact .scroll-info .scroll-text h1, * body #scroll .scroll-container .scroll-two .compact .scroll-info .scroll-text h1, * body #scroll .scroll-container .scroll-three .compact .scroll-info .scroll-text h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+* body #scroll .scroll-container .scroll-one .compact .scroll-info .scroll-text h1 span, * body #scroll .scroll-container .scroll-two .compact .scroll-info .scroll-text h1 span, * body #scroll .scroll-container .scroll-three .compact .scroll-info .scroll-text h1 span {
+  font-weight: normal;
+  font-size: 37px;
+}
+* body #scroll .scroll-container .scroll-one .compact .scroll-info .scroll-text p, * body #scroll .scroll-container .scroll-one .compact .scroll-info .scroll-text li, * body #scroll .scroll-container .scroll-two .compact .scroll-info .scroll-text p, * body #scroll .scroll-container .scroll-two .compact .scroll-info .scroll-text li, * body #scroll .scroll-container .scroll-three .compact .scroll-info .scroll-text p, * body #scroll .scroll-container .scroll-three .compact .scroll-info .scroll-text li {
+  padding-top: 3rem;
+  line-height: 1.5rem;
+}
+* body #scroll .scroll-container .scroll-one .compact .scroll-info .scroll-text ul, * body #scroll .scroll-container .scroll-two .compact .scroll-info .scroll-text ul, * body #scroll .scroll-container .scroll-three .compact .scroll-info .scroll-text ul {
+  list-style: none;
+  margin-left: 10px;
+}
+* body #scroll .scroll-container .scroll-one .compact .scroll-info .scroll-text li:before, * body #scroll .scroll-container .scroll-two .compact .scroll-info .scroll-text li:before, * body #scroll .scroll-container .scroll-three .compact .scroll-info .scroll-text li:before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
+* body #scroll .scroll-container .scroll-one .compact .scroll-img img, * body #scroll .scroll-container .scroll-two .compact .scroll-img img, * body #scroll .scroll-container .scroll-three .compact .scroll-img img {
+  margin: 0 auto;
+  width: 90%;
+}
+* body #scroll .scroll-container .scroll-one .compact .scrollbar, * body #scroll .scroll-container .scroll-two .compact .scrollbar, * body #scroll .scroll-container .scroll-three .compact .scrollbar {
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+  grid-template-areas: 1/3;
+}
+* body #scroll .scroll-container .scroll-one .compact .scrollbar i, * body #scroll .scroll-container .scroll-two .compact .scrollbar i, * body #scroll .scroll-container .scroll-three .compact .scrollbar i {
+  color: #2a2a2a;
+}
+* body #scroll .scroll-container .scroll-one .compact .scrollbar .scroll-activ, * body #scroll .scroll-container .scroll-two .compact .scrollbar .scroll-activ, * body #scroll .scroll-container .scroll-three .compact .scrollbar .scroll-activ {
+  color: #FFFFFF;
+  transform: scale(2);
+  padding: 0 1.5rem;
+}
+* body #showcase .showcase-container .nav {
+  display: flex;
+  padding: 0.5rem 3rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+* body #showcase .showcase-container .nav .logo {
+  float: left;
+}
+* body #showcase .showcase-container .nav .burger-menu {
+  display: none;
+}
+* body #showcase .showcase-container .nav .navbar {
+  float: right;
+}
+* body #showcase .showcase-container .nav .navbar ul {
+  list-style: none;
+}
+* body #showcase .showcase-container .nav .navbar ul li {
+  display: inline-block;
+  padding: 1.5rem 0 0 1.5rem;
+}
+* body #showcase .showcase-container .nav .navbar ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+* body #showcase .showcase-container .nav .navbar ul li a:hover {
+  font-weight: bold;
+}
+* body #showcase .showcase-container .nav {
+  padding-left: 0;
+  padding-right: 0;
+}
+* body #showcase .showcase-container .showcase-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  gap: 1rem;
+  padding: 3rem 0;
+}
+* body #showcase .showcase-container .showcase-info .showcase-img {
+  grid-area: left;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+* body #showcase .showcase-container .showcase-info .showcase-img img {
+  margin: auto;
+  width: 90%;
+}
+* body #showcase .showcase-container .showcase-info .showcase_text {
+  grid-template-areas: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+* body #showcase .showcase-container .showcase-info .showcase_text h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+* body #showcase .showcase-container .showcase-info .showcase_text h1 span {
+  font-weight: normal;
+  font-size: 37px;
+}
+* body #showcase .showcase-container .showcase-info .showcase_text ul {
+  list-style: none;
+  margin-left: 10px;
+}
+* body #showcase .showcase-container .showcase-info .showcase_text ul li {
+  padding-top: 3rem;
+  line-height: 1.5rem;
+}
+* body #showcase .showcase-container .showcase-info .showcase_text ul li:before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
+* body #content .content-container {
+  height: 100%;
+}
+* body #content .content-container .goals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 3rem;
+}
+* body #content .content-container .goals h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+* body #content .content-container .goals h1 span {
+  font-weight: normal;
+  font-size: 37px;
+}
+* body #content .content-container .goals ul {
+  list-style: none;
+  margin-left: 10px;
+}
+* body #content .content-container .goals ul li {
+  padding-top: 3rem;
+  line-height: 1.5rem;
+}
+* body #content .content-container .goals ul li:before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
+* body #content .content-container .goals .goals_img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+* body #content .content-container .goals .goals_img img {
+  margin: auto;
+  width: 90%;
+}
+* body #content .content-container .goals .goals_text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+* body #content .content-container .pick-up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  gap: 1rem;
+  padding: 0 3rem;
+}
+* body #content .content-container .pick-up h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+* body #content .content-container .pick-up h1 span {
+  font-weight: normal;
+  font-size: 37px;
+}
+* body #content .content-container .pick-up ul {
+  list-style: none;
+  margin-left: 10px;
+}
+* body #content .content-container .pick-up ul li {
+  padding-top: 3rem;
+  line-height: 1.5rem;
+}
+* body #content .content-container .pick-up ul li:before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
+* body #content .content-container .pick-up .pick-up-text {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+* body #content .content-container .pick-up .pick-up-img {
+  grid-area: left;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+* body #content .content-container .pick-up .pick-up-img img {
+  width: 90%;
+  margin: auto;
+}
+* body #content .content-container .about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 3rem;
+}
+* body #content .content-container .about-us h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+* body #content .content-container .about-us h1 span {
+  font-weight: normal;
+  font-size: 37px;
+}
+* body #content .content-container .about-us p {
+  padding-top: 3rem;
+  line-height: 1.5rem;
+}
+* body #content .content-container .about-us .about-us_text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+* body #content .content-container .about-us .about-us-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+* body #content .content-container .about-us .about-us-img img {
+  width: 90%;
+  margin: auto;
+}
+* body #content .content-container .paper-download {
+  padding: 3rem;
+}
+* body #content .content-container .paper-download .paper-container {
+  max-width: 1336px;
+  background: linear-gradient(180deg, #1c1c1c 0%, #0e0e0e 100%);
+  border-radius: 15px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 1rem;
+}
+* body #content .content-container .paper-download .paper-container h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+* body #content .content-container .paper-download .paper-container h1 span {
+  font-weight: normal;
+  font-size: 37px;
+}
+* body #content .content-container .paper-download .paper-container .btn a {
+  background: #FFFFFF;
+  text-decoration: none;
+  color: #0e0e0e;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+}
+* body #content .content-container .paper-download .paper-container .btn:hover a {
+  background: #b3b3b3;
+}
+* body #content .content-container .paper-download .paper-container .paper-download-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+* body #content .content-container .paper-download .paper-container .paper-download-text h1 {
+  padding-bottom: 3rem;
+}
+* body #content .content-container .paper-download .paper-container .paper-download-text .btn a {
+  border: transparent;
+  font-weight: bold;
+  text-align: center;
+  background: #FFFFFF;
+  text-decoration: none;
+  color: #0e0e0e;
+  border-radius: 15px;
+  padding: 1rem 5rem;
+}
+* body #content .content-container .paper-download .paper-container .paper-download-img {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+* body #content .content-container .paper-download .paper-container .paper-download-img img {
+  width: 90%;
+  margin: auto;
+}
+* body #content .content-container .partners {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+* body #content .content-container .partners h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+* body #content .content-container .partners h1 span {
+  font-weight: normal;
+  font-size: 37px;
+}
+* body #content .content-container .partners p {
+  padding-top: 3rem;
+  line-height: 1.5rem;
+}
+* body #content .content-container .partners .partners-img {
+  padding: 2rem 1rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
+  width: 100%;
+}
+* body #content .content-container .partners .partners_text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+* body #join {
+  background: url("../staack-photo/join-us_background.png") no-repeat center center/cover;
+  padding: 3rem;
+  height: 80vh;
+}
+* body #join .join-container {
+  max-width: 1336px;
+  background: linear-gradient(180deg, #1c1c1c 0%, #0e0e0e 100%);
+  border-radius: 15px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 8rem;
+  margin: 0 auto;
+}
+* body #join .join-container h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+* body #join .join-container h1 span {
+  font-weight: normal;
+  font-size: 37px;
+}
+* body #join .join-container p {
+  padding-top: 3rem;
+  line-height: 1.5rem;
+}
+* body #join .join-container .join-text p {
+  padding-bottom: 3rem;
+  padding-top: 0;
+}
+* body #join .join-container .join-form .form-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+* body #join .join-container .join-form .form-top a {
+  border-bottom: solid 1px #2a2a2a;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem;
+}
+* body #join .join-container .join-form .form-top a:hover {
+  border-bottom: solid 1px #FFFFFF;
+  font-weight: bold;
+}
+* body #join .join-container .join-form .input-container {
+  background: #2a2a2a;
+  border-radius: 15px;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+* body #join .join-container .join-form .input-container input {
+  background: transparent;
+  border: transparent;
+  padding: 1rem;
+  width: 80%;
+  color: #FFFFFF;
+}
+* body #join .join-container .join-form .btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+* body #join .join-container .join-form .btn input {
+  background: transparent;
+  border: transparent;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+* body #footer .footer-container {
+  max-width: 1198px;
+}
+* body #footer .main-info {
+  padding: 0 0 3rem 0;
+}
+* body #footer .main-info ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  text-align: center;
+}
+* body #footer .main-info ul li {
+  padding-top: 2rem;
+}
+* body #footer .main-info ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+* body #footer .main-info ul li a:hover {
+  color: #999999;
+}
+* body #footer .main-info ul li:nth-of-type(4) {
+  padding-top: 0;
+}
+* body #footer .media {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+* body #footer .media a {
+  padding: 0 1rem;
+}
+
+/*# sourceMappingURL=staack_full.css.map */

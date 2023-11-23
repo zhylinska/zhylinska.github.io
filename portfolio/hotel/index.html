@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>hotel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+          rel="stylesheet">
+    <style>
+        :root {
+            --text-bright: #E8A064;
+            --text-light: #F5F5F9;
+            --text-dark: #000000;
+            --background-dark: #323A3F;
+            --background-black: #2a2a2a;
+            --background-light: #F5F5F9;
+            --background-bright: #ebac78;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+
+        a, li, h2, h1, p {
+            list-style: none;
+            text-decoration: none;
+            color: var(--text-light);
+        }
+
+        .orange {
+            color: var(--text-bright);
+        }
+
+        .btn {
+            padding: 1rem;
+            background: var(--background-black);
+        }
+
+        .nav {
+            background: var(--background-black);
+            overflow: auto;
+        }
+
+        .nav h1 {
+            float: left;
+        }
+
+        .logo {
+            padding: 1.4rem;
+        }
+
+        .nav ul {
+            float: right;
+        }
+
+        .nav ul li {
+            float: left;
+        }
+
+        .nav ul li a {
+            display: block;
+            padding: 1.5rem;
+        }
+
+        .nav ul li a:hover,
+        .nav ul li a.current {
+            background: var(--background-dark);
+            color: var(--text-bright);
+        }
+
+        /* section main1 */
+        .main1 {
+            display: flex;
+            background: url("hotel.jpg") no-repeat center center/cover;
+            height: 48vh;
+        }
+
+        .main1-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .main1-container h1 {
+            padding-top: 10rem;
+        }
+
+        .main1-container p {
+            color: var(--text-light);
+
+        }
+
+        h2, p {
+            padding-top: 4rem;
+        }
+
+        .main1-container .btn:hover {
+            background: var(--background-dark);
+            color: var(--text-bright);
+        }
+
+        .main2-container .img {
+            background: url("about.jpg") no-repeat center/cover;
+            width: 50%;
+            height: 48vh;
+            float: left;
+        }
+
+        .main2-container .history {
+            background: var(--background-black);
+            width: 50%;
+            height: 48vh;
+            float: right;
+        }
+
+        .history-container p {
+            color: var(--text-light);
+        }
+
+        .history-container h2 {
+            padding-top: 10rem;
+        }
+
+        .history-container {
+            padding: 0 4rem;
+        }
+
+        .history-container .btn {
+            background: var(--background-light);
+            color: var(--background-black);
+        }
+
+        .history-container .btn:hover {
+            color: var(--text-bright);
+        }
+
+        /* section main3 */
+        .main3-container .box {
+            width: 33.3%;
+            height: 48vh;
+            float: left;
+            text-align: center;
+            padding: 10rem 5rem;
+        }
+
+        .box h2, p {
+            color: var(--text-dark);
+        }
+
+        .meals {
+            background: var(--background-bright);
+        }
+
+        #back {
+            position: relative;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        #back .back-container {
+            position: fixed;
+            bottom: 2.5rem;
+            right: 2.5rem;
+        }
+
+        #back .back-container a {
+            background: var(--background-light);
+            border: 1px solid var(--text-bright);
+            text-decoration: none;
+            padding: 1rem;
+            color: #000000;
+        }
+
+        /* footer */
+        .footer {
+            clear: both;
+        }
+
+        .footer-container {
+            background: var(--background-black);
+            padding: 1rem;
+        }
+
+        .footer-container i {
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <h1 class="logo">HBT</h1>
+    <ul>
+        <li><a class="current" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<div class="main1">
+    <div class="main1-container">
+        <h1><span class="orange">Enjoy </span>Your Stay</h1>
+        <p>Lorem Ipsum dolor sit ghbvbnjf. Nccgdbd ccv cd.Lorem fjjfjjb kfkjlbö, r flfgf g dgbjtlt m,tkk ollhz. Lfhzurn
+            hgcrrzh njjjk nkjkki. Knfhuzf bbgctdzhd bb v fmfkogj cdkf, hfhjg.</p>
+        <p><a class="btn" href="#">About Our Hotel</a></p>
+    </div>
+</div>
+<div class="main2">
+    <div class="main2-container">
+        <div class="img"></div>
+        <div class="history">
+            <div class="history-container">
+                <h2><span class="orange">The History</span> Of Our Hotel</h2>
+                <p>Lorem fjjfjjb kfkjlbö, r flfgf g dgbjtlt m,tkk ollhz. Lfhzurn hgcrrzh njjjk nkjkki. Knfhuzf bbgctdzhd
+                    bb v fmfkogj cdkf, hfhjg. Lorem fjjfjjb kfkjlbö, r flfgf g dgbjtlt m,tkk ollhz. Lfhzurn hgcrrzh
+                    njjjk nkjkki. Knfhuzf bbgctdzhd bb v fmfkogj cdkf, hfhjg.</p>
+                <p><a class="btn" href="#">Read More</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main3">
+    <div class="main3-container">
+        <div class="box location">
+            <i class="fa-solid fa-hotel fa-3x"></i>
+            <h2>Great Location</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet autem deserunt eaque enim pariatur
+                tempore ullam. Architecto, doloribus et hic, impedit itaque laborum magni, molestiae nemo numquam
+                sapiente velit.</p>
+        </div>
+        <div class="box meals">
+            <i class="fa-solid fa-utensils fa-3x"></i>
+            <h2>Free Meals</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus accusantium beatae corporis,
+                delectus, dignissimos ea error id ipsam iusto magnam nemo nisi provident quidem quisquam rem suscipit
+                temporibus ullam.</p>
+        </div>
+        <div class="box fitness">
+            <i class="fa-solid fa-dumbbell fa-3x"></i>
+            <h2>Fitness Room</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorem iste obcaecati quos veritatis.
+                Adipisci commodi debitis, deserunt dicta eaque eveniet expedita modi provident quae quam reprehenderit,
+                similique, veniam voluptatem.</p>
+        </div>
+    </div>
+</div>
+<!--back-button
+      <div id="back">
+          <div class="back-container">
+              <a href="#">Back to Portfolio</a>
+          </div>
+      </div>
+     -->
+<div class="footer">
+    <div class="footer-container">
+        <a>Hotel BT &copy; 2019, All Rights Reserved</a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+/* Showcase */#showcase .showcase-container {
+    height: 60vh;
+}
+.padding-2 {
+    padding: 0;
+}
+.btn, .btn2, .btn3 {
+    padding: 1.5rem 2.5rem;
+    font-size: 1rem;
+}
+/* About */
+#main-article .about-container .about-article,
+#main-article .about-container .about-sidebar {
+    padding: 2rem;
+}
+/* Article */
+#organisation-info .article-container .article-sidebar div {
+    padding: 2rem;
+}
+#organisation-info .article-container .article .author .category-entertainment {
+   float: none;
+    margin: auto 0;
+}
+/* articles */
+#home_articles .container .articles-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+#home_articles .articles-container .card:nth-of-type(3),
+#home_articles .articles-container .card:nth-of-type(4) {
+    border-bottom: solid 3px var(--dark-background);
+}
+#home_articles .articles-container .card:first-of-type {
+    gap: 1rem;
+}
+

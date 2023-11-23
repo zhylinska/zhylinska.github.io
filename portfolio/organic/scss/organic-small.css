@@ -1,0 +1,50 @@
+* body {
+  max-width: 1024px;
+}
+* body #navigation .nav .nav-container {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+* body #navigation .nav .nav-container .menu ul li {
+  padding: 1.5rem 1rem;
+}
+* body #showcase .showcase-container {
+  height: 120vh;
+}
+* body #about .about-container {
+  display: flex;
+}
+* body #about .about-container .img-box {
+  float: left;
+}
+* body #pages #testimonial .testimonial-container {
+  height: 190vh;
+}
+* body #pages #testimonial .testimonial-container .circles {
+  gap: 0.5rem;
+}
+* body #pages #testimonial .testimonial-container .circles .block {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  width: 130px;
+}
+* body #pages #testimonial .testimonial-container .circles .block h2 {
+  font-size: 2rem;
+}
+* body #pages #testimonial .testimonial-container .circles .block h3 {
+  font-size: 14px;
+}
+* body #pages #subscribe .subscribe-container .subscribe-form {
+  display: flex;
+  flex-direction: column;
+}
+* body #pages #subscribe .subscribe-container .subscribe-form button p {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+* body #pages #subscribe .subscribe-container .subscribe-form button i {
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=organic-small.css.map */

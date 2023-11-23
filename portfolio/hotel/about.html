@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>hotel2</title>
+    <style>
+      :root {
+        --text-bright: #E8A064;
+        --text-light: #F5F5F9;
+        --text-dark: #000000;
+        --background-dark: #323A3F;
+        --background-black: #2a2a2a;
+        --background-light: #F5F5F9;
+        --background-bright: #ebac78;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+        max-width: 1800px;
+        margin: 0 auto;
+      }
+      a, li, h2, h1, p {
+        list-style: none;
+        text-decoration: none;
+        color: var(--text-light)
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .orange {
+        color: var(--text-bright);
+      }
+      .nav {
+        background: var(--background-black);
+        overflow: auto;
+      }
+      .nav h1 {
+        float: left;
+      }
+      .logo {
+        padding: 1rem;
+      }
+      .nav ul {
+        float: right;
+      }
+      .nav ul li {
+        float: left;
+      }
+      .nav ul li a {
+        display: block;
+        padding: 1rem;
+      }
+      .nav ul li a:hover,
+      .nav ul li a.current {
+        background: var(--background-dark);
+        color: var(--text-bright);
+      }
+      /*about*/
+      .about {
+        height: 48vh;
+        background: var(--background-light);
+        padding: 2rem;
+      }
+      .about p, .about h1 {
+        color: #2a2a2a;
+        padding-bottom: 4rem;
+      }
+      .about .left {
+        float: left;
+        width: 60%;
+        padding-right: 2rem;
+      }
+      .about .right {
+        float: right;
+        width: 40%;
+
+      }
+      .about .right img {
+
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 18rem;
+        margin-top: 2rem;
+
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      /*guests say*/
+      .guests-say {
+        background: url("gests-say.jpg") no-repeat center center/cover;
+        height: 600px;
+        padding: 5rem;
+      }
+      .guests-say h2 {
+        padding-bottom: 3rem;
+      }
+      .guests-say p {
+        padding: 3rem;
+      }
+      .feedback {
+        background: var(--background-bright);
+        opacity: 0.8;
+        margin: 0 auto 3rem auto;
+      }
+      .guests-say h2 {
+        color: #2a2a2a;
+      }
+      .girl1 img, .girl2 img {
+        width: 15%;
+        height: 140px;
+        float: left;
+        padding: 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      #back {
+        position: relative;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+      #back .back-container {
+        position: fixed;
+        bottom: 2.5rem;
+        right: 2.5rem;
+      }
+      #back .back-container a {
+        background: var(--background-light);
+        border: 1px solid var(--text-bright);
+        text-decoration: none;
+        padding: 1rem;
+        color: #000000;
+      }
+
+      /* footer */
+      .footer {
+        clear: both;
+      }
+      .footer-container {
+        background: #2a2a2a;
+        padding: 1rem;
+      }
+      .footer-container i {
+        color: var(--text-light);
+      }
+    </style>
+  </head>
+  <body>
+  <div class="nav">
+    <h1 class="logo">HBT</h1>
+    <ul>
+      <li><a class="home" href="index.html">Home</a></li>
+      <li><a class="current" href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <main>
+    <div class="about">
+      <div class="about container">
+        <div class="left">
+          <h1><span class="orange">About</span> Hotel BT</h1>
+          <p>Lorem fjjfjjb kfkjlbö, r flfgf g dgbjtlt m,tkk ollhz. Lfhzurn hgcrrzh njjjk nkjkki. Knfhuzf bbgctdzhd bb v fmfkogj cdkf, hfhjg. Lorem fjjfjjb kfkjlbö, r flfgf g dgbjtlt m,tkk ollhz. Lfhzurn hgcrrzh njjjk nkjkki. Knfhuzf bbgctdzhd bb v fmfkogj cdkf, hfhjg. Lorem fjjfjjb kfkjlbö, r flfgf g dgbjtlt m,tkk ollhz.</p>
+          <p>Lfhzurn hgcrrzh njjjk nkjkki. Knfhuzf bbgctdzhd bb v fmfkogj cdkf, hfhjg. Lorem fjjfjjb kfkjlbö, r flfgf g dgbjtlt m,tkk ollhz. Lfhzurn hgcrrzh njjjk nkjkki. Knfhuzf bbgctdzhd bb v fmfkogj cdkf, hfhjg.</p>
+        </div>
+        <div class="right">
+           <img src="hotel.jpeg" alt="hotel-photo">
+        </div>
+      </div>
+    </div>
+        <div class="guests-say">
+            <h2>What Our Guests Say</h2>
+            <div class="girl1 feedback container">
+              <img src="girl1.jpg" alt="girl1">
+              <p>Lfhzurn hgcrrzh njjjk nkjkki. Knfhuzf bbgctdzhd bb v fmfkogj cdkf, hfhjg. Lorem fjjfjjb kfkjlbö, r flfgf g dgbjtlt m,tkk ollhz. Lfhzurn hgcrrzh njjjk nkjkki. Knfhuzf bbgctdzhd bb v fmfkogj cdkf, hfhjg.</p>
+            </div>
+            <div class="girl2 feedback container">
+              <img src="girl2.jpg" alt="girl2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque doloremque doloribus fugit impedit iusto nihil recusandae repellat sunt veniam. Amet commodi consequuntur error iste quaerat similique temporibus unde! Nemo!</p>
+            </div>
+        </div>
+  </main>
+  <!--back-button
+  <div id="back">
+    <div class="back-container">
+      <a href="#">Back to Portfolio</a>
+    </div>
+  </div>
+-->
+  <div class="footer">
+    <div class="footer-container">
+      <a>Hotel BT &copy; 2019, All Rights Reserved</a>
+    </div>
+  </div>
+  </body>
+</html>

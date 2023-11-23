@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>hotel3</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+      :root {
+        --text-bright: #E8A064;
+        --text-light: #F5F5F9;
+        --text-dark: #000000;
+        --background-dark: #323A3F;
+        --background-black: #2a2a2a;
+        --background-light: #F5F5F9;
+        --background-bright: #ebac78;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        max-width: 1800px;
+        margin: 0 auto;
+
+      }
+        p, h1, h2, li, a {
+        list-style: none;
+        text-decoration: none;
+        color: var(--text-light);
+
+      }
+      .orange {
+        color: var(--text-bright);
+      }
+      /*navigation*/
+      .nav {
+        background: var(--background-black);
+        overflow: auto;
+      }
+      .nav h1 {
+        float: left;
+      }
+      .logo {
+        padding: 1rem;
+      }
+      .nav ul {
+        float: right;
+      }
+      .nav ul li {
+        float: left;
+      }
+      .nav ul li a {
+        display: block;
+        padding: 1rem;
+      }
+      .nav ul li a:hover,
+      .nav ul li a.current {
+        background: var(--background-dark);
+        color: var(--text-bright);
+      }
+      /*form*/
+      .form {
+        height: 48vh;
+        max-width: 900px;
+        margin: 8rem auto;
+      }
+      .form-container {
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .form-container input, textarea {
+        width: 800px;
+        margin: 0 auto;
+        padding: 0.7rem;
+        border: solid  var(--text-light) 1px;
+        background: whitesmoke;
+        line-height: 1.2rem;
+      }
+      .form-container h1 {
+        color: var(--text-dark);
+      }
+      .form-container p {
+        color: var(--text-dark);
+        padding-top: 1rem;
+      }
+       .form-container .field {
+         margin: 1rem auto;
+       }
+      .form-container button {
+        background: var(--background-black);
+        color: var(--text-light);
+        border: none;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+      }
+      .form-container button:hover {
+        color: var(--text-bright);
+      }
+      /*contacts*/
+      .main3-container .box {
+        width: 33.3%;
+        height: 25.2vh;
+        float: left;
+        text-align: center;
+        padding: 0 40px 40px 40px;
+        background: var(--background-dark);
+      }
+      .fa-solid {
+        margin: 4rem 0;
+        color: var(--text-light);
+      }
+      .box h2, p {
+        margin-bottom: 20px;
+        color: var(--text-light);
+      }
+      .box a:hover {
+        color: var(--text-bright);
+      }
+        /*footer*/
+      .footer {
+        clear: both;
+      }
+      .footer-container {
+        background: var(--background-black);
+        padding: 20px;
+        text-align: center;
+      }
+      .footer-container i {
+        color: var(--text-light);
+      }
+/*back-button*/
+      #back {
+        position: relative;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+      #back .back-container {
+        position: fixed;
+        bottom: 2.5rem;
+        right: 2.5rem;
+      }
+      #back .back-container a {
+        background: var(--background-light);
+        border: 1px solid var(--text-bright);
+        text-decoration: none;
+        padding: 1rem;
+        color: #000000;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <h1 class="logo">HBT</h1>
+        <ul>
+          <li><a class="home" href="index.html">Home</a></li>
+          <li><a class=about" href="about.html">About</a></li>
+          <li><a class="current" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="form">
+      <div class="form-container">
+        <h1><span class="orange">Contact</span> Us</h1>
+        <p>Please fill out the form below to contact us</p>
+        <div class="form-name field">
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-email field">
+          <label for="email">Email</label><br>
+          <input type="text" id="email" name="email" required>
+        </div>
+        <div class="form-message field">
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" cols="20" rows="10" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+       </div>
+      </div>
+      <div class="main3">
+        <div class="main3-container">
+          <div class="box location">
+            <i class="fa-solid fa-hotel fa-3x"></i>
+            <h2>Location</h2>
+            <p><a href="#">50 Main st, Boston NA</a></p>
+          </div>
+          <div class="box phone">
+            <i class="fa-solid fa-phone fa-3x"></i>
+            <h2>Phone Number</h2>
+            <p><a href="#">(617)555-8080)</a></p>
+          </div>
+          <div class="box email">
+            <i class="fa-solid fa-envelope fa-3x"></i>
+            <h2>Email Address</h2>
+            <p><a href="#">infohotel.co</a></p>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <a>Hotel BT &copy; 2019, All Rights Reserved</a>
+        </div>
+      </div>
+    </footer>
+   <!--back button
+    <div id="back">
+      <div class="back-container">
+        <a href="#">Back to Portfolio</a>
+      </div>
+    </div>
+-->
+
+  </body>
+</html>

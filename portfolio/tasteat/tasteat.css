@@ -1,0 +1,611 @@
+:root {
+    --dark-background: #292e36;
+    --light-background: #FFF8F5;
+    --white-background: #E5e5e5;
+    --light-text: #fff8f5;
+    --dark-text: #555555;
+    --hover-color: #e1b168;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+    font-size: 1.2rem;
+    color: var(--dark-text);
+    font-weight: normal;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Cormorant Infant';
+    font-weight: normal;
+}
+.db {
+    background: var(--dark-background);
+}
+.lb {
+    background: var(--light-background);
+}
+.wb {
+    background: var(--white-background);
+}
+.p-1 {
+    padding: 1rem;
+}
+.p-2 {
+    padding: 2rem;
+}
+.ptb-2 {
+  padding: 4rem 2rem;
+}
+.introduction {
+    text-align: center;
+}
+.category {
+    border-top: solid 1px var(--hover-color);
+    border-bottom: solid 1px var(--hover-color);
+    width: max-content;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.orange {
+    color: var(--hover-color);
+}
+.btn {
+    text-decoration: none;
+    color: var(--hover-color);
+    border: solid 1px var(--hover-color);
+    padding: 1rem 2rem;
+    width: max-content;
+}
+.btn:hover {
+    color: var(--dark-text);
+    background: var(--hover-color);
+}
+/*navigation*/
+/*nav top */
+#nav .nav-container .nav-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+#nav .nav-container .nav-top .logo img {
+    height: 9rem;
+}
+#nav .nav-container .nav-top p {
+    margin: 3rem;
+    padding: 1rem;
+}
+/* nav bottom */
+#nav .nav-container .nav-bottom .nav-menu {
+    padding: 1rem 2rem 3.5rem 2rem;
+    border: solid 1px #5c6168;
+}
+#nav .nav-container .nav-bottom .nav-menu > ul:first-of-type {
+    display: flex;
+    float: left;
+    list-style: none;
+}
+#nav .nav-container .nav-bottom .nav-menu ul:first-of-type li {
+    color: var(--light-text);
+   padding: 1rem 2rem;
+}
+#nav .nav-container .nav-bottom .nav-menu ul:first-of-type li a {
+    text-decoration: none;
+    color: var(--light-text);
+}
+#nav .nav-container .nav-bottom .nav-menu ul:first-of-type li {
+    display: block;
+    position: relative;
+}
+#nav .nav-container .nav-bottom .nav-menu ul:first-of-type li ul {
+    position: absolute;
+    display: block;
+    left: -0.5rem;
+    top: 2.5rem;
+}
+#nav .nav-container .nav-bottom .nav-menu ul:first-of-type li:hover ul li {
+    display: block;
+    cursor: pointer;
+    background: #828282;
+}
+#nav .nav-container .nav-bottom .nav-menu ul:first-of-type li:hover {
+    color: #d8bf95;
+}
+#nav .nav-container .nav-bottom .nav-menu ul:first-of-type li ul li {
+    padding: 1rem 0.5rem;
+    width: 10rem;
+    display: none;
+}
+#nav .nav-container .nav-bottom .nav-menu ul li:hover a,
+#nav .nav-container .nav-bottom .nav-menu ul li:hover a i {
+    color: var(--hover-color);
+}
+#nav .nav-container .nav-bottom .nav-menu ul:first-of-type li ul li:hover {
+    background: #d8bf95;
+}
+#nav .nav-container .nav-bottom .nav-menu ul:last-of-type {
+    display: flex;
+    float: right;
+    list-style: none;
+    padding: 1rem;
+}
+#nav .nav-container .nav-bottom .nav-menu ul:last-of-type li a {
+    padding: 1rem;
+    color: var(--light-text);
+}
+    /* showcase */
+#showcase .showcase-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--light-text);
+}
+#showcase .showcase-container div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+#showcase .showcase-container h1 {
+  font-size: 6.8rem;
+}
+#showcase .showcase-container p {
+    padding: 2rem 0;
+}
+#showcase .showcase-container div:first-of-type .btn {
+    width: max-content;
+    margin-top: 1rem;
+}
+#showcase .showcase-container div:last-of-type img {
+   display: flex;
+   float: right;
+   padding: 3rem 3rem 0 2rem;
+}
+/* about restaurant contacts */
+#info .info-container .contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding: 2rem;
+}
+#info .info-container .contact-info div {
+    display: flex;
+}
+#info .info-container .contact-info div i {
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+}
+#info .info-container .contact-info div .block {
+    display: block;
+}
+#info .info-container .contact-info h3 {
+    padding-bottom: 0.5rem;
+}
+#info .info-container .contact-info a {
+    text-decoration: none;
+    color: var(--dark-text);
+}
+#info .info-container .contact-info a:hover {
+    color: var(--hover-color);
+}
+/* about restaurant history */
+#info .info-container .rest-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding-top: 0;
+}
+#info .info-container .rest-info .img a img,
+#info .info-container .rest-info .text {
+    width: 100%;
+}
+#info .info-container .rest-info .img {
+    margin: auto 0;
+}
+#info .info-container .rest-info h2,
+#info .info-container .rest-info p {
+    padding-bottom: 1.2rem;
+}
+/* menu */
+#menu .menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+/* menu sidebar */
+#menu .menu-container .sidebar h3 {
+    padding-bottom: 1rem;
+}
+#menu .menu-container .sidebar p {
+    padding-bottom: 2rem;
+}
+#menu .menu-container .sidebar .btn {
+    margin-top: 2rem;
+}
+/* menu list */
+#menu .menu-container .list {
+    padding-top: 3.2rem;
+}
+#menu .menu-container .list h3 {
+    padding: 2rem 0;
+}
+.block {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0;
+}
+.dot {
+ border-bottom: solid var(--dark-text) 2px;
+    flex-grow: 1;
+    padding-top: 2rem;
+}
+.price {
+    padding-top: 1rem;
+}
+.dish {
+    display: flex;
+    float: left;
+}
+.dish .ingr {
+    margin-top: 1rem;
+}
+.dish .img {
+    padding-right: 2rem;
+}
+/* testimonial */
+#testimonial .testimonial-container {
+    color: var(--light-text);
+}
+#testimonial .testimonial-container .clients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+#testimonial .testimonial-container h2 {
+    padding-bottom: 1rem;
+}
+#testimonial .testimonial-container p {
+    padding-bottom: 3rem;
+}
+#testimonial .testimonial-container .clients div {
+    background: #343942;
+    padding: 0 1rem;
+    display: grid;
+    font-family: 'Cormorant Infant';
+}
+#testimonial .testimonial-container .clients div .block-header {
+    display: flex;
+    float: left;
+    border-bottom: solid 1px;
+}
+#testimonial .testimonial-container .clients div .block-header a:first-of-type {
+    display: block;
+    position: relative;
+}
+#testimonial .testimonial-container .clients div .block-header a:last-of-type {
+    display: block;
+    position:absolute;
+    background: var(--hover-color);
+    border: solid 1px var(--dark-text);
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+}
+#testimonial .testimonial-container .clients div .block-header div h3 {
+    padding-top: 1.7rem;
+}
+#testimonial .testimonial-container .clients div .block-contain p {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+#testimonial .testimonial-container .photo {
+    background: url("tasteat-photo/lamps-decor.png") no-repeat center center/cover;
+    height: 70vh;
+}
+/* offers */
+#special .special-container .special-content .offers .offers-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem
+}
+#special .special-container .special-content .offers .offers-block .block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Cormorant Infant';
+}
+#special .special-container .special-content .offers .offers-block .block1 {
+    background: url("tasteat-photo/offer-block1-back.png") no-repeat center center/cover;
+
+}
+#special .special-container .special-content .offers .offers-block .block2 {
+    background: url("tasteat-photo/offer-block2-back.png") no-repeat center center/cover;
+}
+#special .special-container .special-content .offers .offers-block .block {
+    padding: 3rem 2rem;
+}
+#special .special-container .special-content .offers .offers-block .price {
+    font-size: 3.5rem;
+    background: url("tasteat-photo/price-back1.png") no-repeat;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+#special .special-container .special-content .offers .offers-block .block a span {
+    text-transform: uppercase;
+}
+#special .special-container .special-content .offers .offers-block .block .left a {
+    border-bottom: solid 1px var(--dark-background);
+}
+#special .special-container .special-content .offers .offers-block .block .left a {
+    border-top: solid 1px var(--dark-background);
+}
+#special .special-container .special-content .offers .offers-block .block h3 {
+    padding-top: 1rem;
+}
+#special .special-container .special-content .offers > h2,
+#special .special-container .special-content .offers > p {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+#special .special-container .special-content .category,
+#special .special-container .special-content .btn {
+    margin: 2rem auto 2rem auto;
+}
+/* menu popular */
+#special .special-container .popular > h2,
+#special .special-container .popular > p {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+#special .special-container .popular .popular-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+#special .special-container .popular .popular-block .block .h3 {
+    width: 90%;
+    padding: 1rem;
+    border-bottom: solid 1px #C4c4c4;
+}
+#special .special-container .popular .popular-block .block p {
+    padding: 1rem;
+}
+#special .special-container .popular .popular-block .block .h3 h3:first-of-type {
+    display: flex;
+    float: left;
+}
+#special .special-container .popular .popular-block .block .h3 h3:last-of-type {
+    display: flex;
+    float: right;
+}
+#special .special-container .popular .popular-block .block .h3:hover {
+    color: #151515;
+    font-size: 1.5rem;
+}
+#special .special-container .popular .popular-block .block {
+   display: flex;
+    flex-direction: column;
+}
+#special .special-container .services .services-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+}
+/* services */
+#special .special-container .services .services-container .offers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    text-align: center;
+    gap: 2rem;
+    font-family: 'josefin sans';
+}
+#special .special-container .services .services-container .offer-text {
+    color: var(--light-text);
+}
+#special .special-container .services .services-container .offer-text h2 {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+#special .special-container .services .services-container .offers div {
+    border: solid 20px #323841;
+    padding: 3.5rem 2rem;
+}
+#special .special-container .services .services-container .offers div a {
+    padding-top: 1rem;
+    color: var(--light-text);
+    text-decoration: none;
+}
+#special .special-container .services .services-container .offers div h4:hover {
+    color: var(--hover-color);
+}
+/* blog */
+#blog .blog-container {
+    padding: 3rem 0 0 0;
+}
+#blog .blog-container > h2,
+#blog .blog-container > p {
+    text-align: center;
+    padding: 2rem 0;
+}
+#blog .blog-container .category {
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+#blog .blog-container .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+}
+#blog .blog-container .news .block1,
+#blog .blog-container .news .block2 {
+    margin: 2rem auto;
+    border: solid 1px #C4c4c4;
+}
+#blog .blog-container .news .block1 .top {
+  background: url("tasteat-photo/blog1back.jpg") no-repeat center center/cover;
+height: 35vh;
+    width: 100%;
+    opacity: 0.8;
+}
+#blog .blog-container .news .block2 .top {
+    background: url("tasteat-photo/blog2back.jpeg") no-repeat center center/cover;
+    height: 35vh;
+    width: 100%;
+    opacity: 0.8;
+}
+#blog .blog-container .news .block1 .top,
+#blog .blog-container .news .block2 .top {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#blog .blog-container .news .block1 .top .btn,
+#blog .blog-container .news .block2 .top .btn {
+    background: var(--hover-color);
+    color: var(--dark-text);
+}
+#blog .blog-container .news .block1 .top .btn:hover,
+#blog .blog-container .news .block1 .top .btn:hover {
+    background: var(--light-background);
+}
+#blog .blog-container .news .block1 .bottom .head .category,
+#blog .blog-container .news .block2 .bottom .head .category {
+    display: inline-block;
+    margin-right: 1rem;
+}
+#blog .blog-container .news .block1 .bottom,
+#blog .blog-container .news .block2 .bottom {
+    padding: 1rem 2rem 2rem 2rem;
+}
+#blog .blog-container .news .block1 h3,
+#blog .blog-container .news .block2 h3 {
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+/* reservation form*/
+#reservation .reservation-container {
+    background: url("tasteat-photo/reservback.png") no-repeat center center/cover;
+    height: 70vh;
+    padding-top: 5rem;
+}
+#reservation .reservation-container .form-container {
+    max-width: 900px;
+    padding: 3rem;
+    opacity: 0.95;
+    margin: 0 auto;
+}
+#reservation .reservation-container .category {
+    margin: 1rem auto;
+    color: var(--light-text);
+}
+#reservation .reservation-container h3 {
+    text-align: center;
+    padding: 2rem;
+    color: var(--light-text);
+    font-size: 2.3rem;
+}
+#reservation .reservation-container .form .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+#reservation .reservation-container .form .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+#reservation .reservation-container .form input {
+    padding: 1rem;
+    margin: 1rem 0;
+    background: transparent;
+    border: 1px solid #858585;
+    color: var(--light-text);
+    font-size: 1.2rem;
+}
+#reservation .reservation-container .form input::placeholder {
+    color: var(--light-text);
+    font-size: 1.2rem;
+}
+#reservation .reservation-container .form-container .btn {
+   margin: 2rem auto;
+    background: var(--light-background);
+    color: var(--dark-text);
+}
+#reservation .reservation-container .form-container .btn:hover {
+    background: var(--hover-color);
+}
+/* section contacts */
+#contacts .contacts-container .top {
+    display: flex;
+}
+#contacts .contacts-container .top a {
+    margin: 0.5rem auto;
+    align-items: center;
+}
+#contacts .contacts-container .top a img {
+    width: 30rem;
+}
+#contacts .contacts-container .bottom {
+   display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+#contacts .contacts-container .bottom > div {
+    padding: 3rem;
+}
+#contacts .contacts-container .bottom > div p a {
+    text-decoration: none;
+    color: var(--dark-text);
+}
+#contacts .contacts-container .bottom > div p a:hover {
+color: var(--hover-color);
+}
+#contacts .contacts-container .bottom div ul {
+    list-style: none;
+}
+#contacts .contacts-container .bottom .category {
+    padding: 1rem;
+}
+#contacts .contacts-container .bottom div:nth-of-type(2) {
+    text-align: center;
+}
+#contacts .contacts-container .bottom div:nth-of-type(2) input {
+  padding: 1rem;
+    font-size: 1rem;
+    background: transparent;
+    border: solid 1px #858585;
+    color: var(--light-text);
+}
+#contacts .contacts-container .bottom div:nth-of-type(2) input::placeholder {
+    color: var(--light-text);
+}
+#contacts .contacts-container .bottom div:nth-of-type(2) button {
+    padding: 1rem;
+    font-size: 1rem;
+}
+#contacts .contacts-container .bottom div:nth-of-type(2) button:hover {
+    background: var(--hover-color);
+}
+#contacts .contacts-container .bottom div:nth-of-type(3) .category {
+   margin: 0 0 1rem auto;
+}
+#contacts .contacts-container .bottom div:nth-of-type(3) {
+    text-align: right;
+}
+/* footer */
+#footer .footer-container p {
+    color: var(--light-text);
+    padding: 1rem;
+    border-top: 1px solid #858585;
+    text-align: center;
+}

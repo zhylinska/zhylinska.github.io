@@ -1,0 +1,237 @@
+* body {
+  font-size: 1.5rem;
+}
+* body .container {
+  padding: 1rem;
+}
+* body #navigation .nav .nav-container .logo {
+  padding-top: 1rem;
+}
+* body #navigation .nav .nav-container img {
+  width: 7rem;
+}
+* body #navigation .nav .nav-container .basket div:first-of-type img {
+  width: 3rem;
+}
+* body #navigation .nav .nav-container .basket div:last-of-type {
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+* body #navigation .nav .nav-container .menu {
+  display: none;
+}
+* body #navigation .nav .nav-container .burger-menu {
+  display: block;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+* body #navigation .nav .nav-container .burger-menu .toggle {
+  display: none;
+}
+* body #navigation .nav .nav-container .burger-menu .menu-btn {
+  padding-top: 1rem;
+}
+* body #navigation .nav .nav-container .burger-menu .menu-btn .line {
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 1.5rem;
+  background: #274C5B;
+  margin: 1rem;
+  transition-duration: 0.5s;
+}
+* body #navigation .nav .nav-container .burger-menu .menu-btn .line::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #274C5B;
+  top: 7px;
+  transition-duration: 0.5s;
+}
+* body #navigation .nav .nav-container .burger-menu .menu-btn .line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #274C5B;
+  top: -7px;
+  transition-duration: 0.5s;
+}
+* body #navigation .nav .nav-container .burger-menu .menu-box ul {
+  display: none;
+}
+* body #navigation .nav .nav-container .burger-menu .toggle:checked ~ .menu-btn > .line {
+  transform: rotate(45deg);
+  background: #7eb693;
+}
+* body #navigation .nav .nav-container .burger-menu .toggle:checked ~ .menu-btn > .line::before {
+  transform: rotate(0);
+  top: 0;
+  background: #7eb693;
+}
+* body #navigation .nav .nav-container .burger-menu .toggle:checked ~ .menu-btn > .line::after {
+  transform: rotate(90deg);
+  top: 0;
+  background: #7eb693;
+}
+* body #navigation .nav .nav-container .burger-menu .toggle:checked ~ .menu-box > ul {
+  position: fixed;
+  top: 1.7rem;
+  left: 55%;
+  display: flex;
+  flex-direction: column;
+}
+* body #navigation .nav .nav-container .burger-menu .toggle:checked ~ .menu-box > ul li {
+  list-style: none;
+  padding: 0.7rem 1.5rem;
+  background: #ffffff;
+}
+* body #navigation .nav .nav-container .burger-menu .toggle:checked ~ .menu-box > ul li a {
+  color: #274C5B;
+  text-decoration: none;
+}
+* body #navigation .nav .nav-container .burger-menu .toggle:checked ~ .menu-box > ul li:hover a {
+  color: #7eb693;
+}
+* body #showcase .showcase-container .showcase-text {
+  margin: 0 auto;
+}
+* body #promo .promo-container {
+  display: flex;
+  flex-direction: column;
+}
+* body #about .about-container {
+  display: flex;
+  flex-direction: column;
+}
+* body #about .about-container .text-box {
+  padding: 1rem;
+}
+* body #products .products-container .blocks-container {
+  display: flex;
+  flex-direction: column;
+}
+* body #products .products-container .blocks-container .block .img {
+  padding: 1rem;
+}
+* body #pages #testimonial .testimonial-container {
+  height: 210vh;
+}
+* body #pages #testimonial .testimonial-container .testimonial p {
+  font-size: 1.5rem;
+}
+* body #pages #testimonial .testimonial-container .testimonial h6 {
+  font-size: 1.4rem;
+}
+* body #pages #testimonial .testimonial-container .testimonial .circles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body #pages #offers .offers-container .we-offer {
+  flex-direction: column;
+}
+* body #pages #offers .offers-container .we-offer .btn {
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+* body #pages #offers .offers-container .blocks {
+  display: flex;
+  flex-direction: column;
+}
+* body #pages #offers .offers-container .blocks .block .img {
+  padding: 1rem;
+}
+* body #pages #eco-friendly .eco-friendly-container {
+  background: #ffffff;
+}
+* body #pages #eco-friendly .eco-friendly-container .eco-tex {
+  padding: 1rem;
+  width: 100%;
+}
+* body #pages #prod-types .prod-types-cont {
+  display: flex;
+  flex-direction: column;
+}
+* body #pages #news .news-container .our-news {
+  flex-direction: column;
+}
+* body #pages #news .news-container .our-news .btn {
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+* body #pages #news .news-container .news-blocks {
+  display: flex;
+  flex-direction: column;
+}
+* body #pages #news .news-container .news-blocks .block1 {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+* body #pages #news .news-container .news-blocks .block1 .news-text {
+  top: 5rem;
+  padding: 1rem;
+}
+* body #pages #news .news-container .news-blocks .block2 {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+* body #pages #news .news-container .news-blocks .block2 .news-text {
+  top: 5rem;
+  padding: 1rem;
+}
+* body #pages #subscribe {
+  padding: 5rem 1rem;
+}
+* body #pages #subscribe .subscribe-container {
+  display: flex;
+  flex-direction: column;
+}
+* body #pages #subscribe .subscribe-container .subscribe-form input {
+  font-size: 1.5rem;
+  width: 80%;
+  padding: 1rem 0;
+  text-align: center;
+}
+* body #pages #subscribe .subscribe-container .subscribe-form button {
+  font-size: 1.5rem;
+  width: 80%;
+}
+* body #contacts .contacts-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+* body #contacts .contacts-container .contacts-block1 {
+  text-align: left;
+}
+* body #contacts .contacts-container .contacts-block1 h4 {
+  padding-top: 1rem;
+}
+* body #contacts .contacts-container .contacts-block2 {
+  padding: 1rem;
+}
+* body #contacts .contacts-container .contacts-block2 i {
+  padding: 2rem 0.5rem 0 0.5rem;
+}
+* body #contacts .contacts-container .contacts-block3 ul li {
+  padding-top: 1rem;
+}
+* body #footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1rem;
+}
+* body #footer .footer-container div:first-of-type {
+  border-right: none;
+}
+
+/*# sourceMappingURL=organic-mob.css.map */

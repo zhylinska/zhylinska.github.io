@@ -1,0 +1,86 @@
+ 
+* {
+  body {
+    max-width: 1024px;
+    #navigation {
+      .nav {
+        .nav-container {
+          margin: 0 1rem;
+          padding: 1rem;
+          .menu {
+            ul {
+              li {
+                padding: 1.5rem 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #showcase {
+      .showcase-container {
+        height: 120vh;
+      }
+    }
+    #about {
+      .about-container {
+        display: flex;
+
+        .img-box {
+          float: left;
+        }
+      }
+    }
+
+
+
+    #pages {
+      #testimonial {
+        .testimonial-container {
+          height: 190vh;
+          .circles {
+              gap: 0.5rem;
+            .block {
+              display: flex;
+              flex-direction: column;
+              height: 130px;
+              width: 130px;
+              h2 {
+                font-size: 2rem;
+              }
+              h3 {
+                font-size: 14px;
+              }
+
+            }
+          }
+        }
+      }
+      #subscribe {
+        .subscribe-container {
+          .subscribe-form {
+            display: flex;
+            flex-direction: column;
+
+            button {
+              p {
+                padding-top: 0;
+                padding-bottom: 0;
+              }
+              i {
+                margin-top: 0;
+              }
+
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+
+  }
+}

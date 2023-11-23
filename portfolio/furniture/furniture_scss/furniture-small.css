@@ -1,0 +1,17 @@
+/* Error: Undefined variable.
+ *    ,
+ * 15 |         box-shadow: 0 0.5rem 1rem $grey-color;
+ *    |                                   ^^^^^^^^^^^
+ *    '
+ *   furniture-small.scss 15:35  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 15 \2502          box-shadow: 0 0.5rem 1rem $grey-color;\a    \2502                                    ^^^^^^^^^^^\a    \2575 \a   furniture-small.scss 15:35  root stylesheet";
+}

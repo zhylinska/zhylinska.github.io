@@ -1,0 +1,59 @@
+
+.navigationContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: whitesmoke;
+    list-style: none;
+    padding: 0 5rem;
+    font-weight: bold;
+
+}
+
+.navItem:hover {
+    color: black;
+}
+
+.navItem {
+    cursor: pointer;
+    padding: 1rem 0;
+}
+
+.logo {
+    color: green;
+}
+
+.products {
+    position: relative;
+}
+
+.navProducts {
+    font-weight: normal;
+    list-style: none;
+    position: absolute;
+    background: whitesmoke;
+    left: -1rem;
+    top: 3.7rem;
+    display: none;
+    cursor: pointer;
+}
+.product {
+    padding: 1.3rem;
+   white-space: nowrap;
+}
+.products:hover .navProducts {
+    display: block;
+}
+.product:hover {
+    background: #b1a9a9;
+}
+.active {
+    font-weight: bolder;
+}

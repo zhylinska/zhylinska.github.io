@@ -1,0 +1,83 @@
+.container {
+    max-width: 520px;
+    margin: 0 auto;
+}
+.category {
+    text-align: center;
+    padding-top: 6rem;
+}
+
+
+
+    /* showcase */
+
+.showcase-container .showcase-info {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#showcase .showcase-container .showcase-info .showcase-text {
+    clip-path: none;
+}
+#showcase .showcase-container .showcase-info .showcase-img img {
+    clip-path: none;
+}
+
+
+#showcase .showcase-container .showcase-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+/* about me */
+#about-me .about-me-container .about-text {
+    padding: 0 2rem 2rem 2rem;
+}
+/* skills */
+
+#skills .skills-container .skills-info .skills-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* portfolio */
+#portfolio .portfolio-container .portfolio-blocks .block {
+    background: var(--light-background);
+    text-align: center;
+}
+#portfolio .portfolio-container .portfolio-blocks > div a p {
+    color: var(--dark-text)!important;
+}
+#portfolio .portfolio-container .portfolio-blocks > div a p:hover {
+    color: var(--bright-text) !important;
+}
+#portfolio .portfolio-container .portfolio-info .slider-wraper .slider-container .slide img {
+    width: 100%;
+    padding: 0;
+
+}
+
+
+#portfolio .portfolio-container .portfolio-info .slider-wraper
+.slider-container .slick-arrow {
+    position: absolute;
+    cursor: pointer;
+    font-size: 25px;
+    border: transparent;
+    padding: 0.7rem 1.2rem 1rem 1.2rem;
+    border-radius: 50%;
+    bottom: 2rem;
+}
+
+
+
+ /* contacts*/
+
+#contacts .contacts-container .contacts-info div {
+    display: inline-block;
+}
+
+#contacts .contacts-container .contacts-info div a i {
+    padding: 1rem;
+}

@@ -1,0 +1,31 @@
+.card {
+    padding: 1rem;
+}
+.itemImg {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0 1rem 1rem;
+}
+.itemInfo {
+    text-align: left;
+}
+
+.putInBasket {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    color: green;
+}
+.basketButton {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+}
