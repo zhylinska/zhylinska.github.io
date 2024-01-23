@@ -8,10 +8,12 @@
     --bright-text: #146a5f;
     --hover-color: #e1b168;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
     box-sizing: border-box;
     font-family: 'montserrat', sans-serif;
@@ -21,34 +23,42 @@ body {
     margin: 0 auto;
     background: var(--light-background);
 }
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 .lb {
     background: var(--light-background);
 }
+
 .bb {
     background: var(--bright-background);
 }
+
 .db {
     background: var(--dark-background);
 }
+
 .category {
     padding: 6rem 3rem 3rem 3rem;
 }
+
 .category span {
     border-top: solid 2px var(--bright-text);
     border-bottom: solid 2px var(--bright-text);
     padding: 0.5rem 1rem;
     text-transform: uppercase;
 }
+
 /* navbar */
 
 #navbar {
     position: relative;
     margin: 0 auto;
 }
+
 #navbar .navbar-container {
     position: fixed;
     top: 0;
@@ -56,14 +66,17 @@ body {
     width: 100%;
     z-index: 999;
 }
+
 /* navbar burger */
 #navbar .navbar-container .burger-menu {
-   display: none;
+    display: none;
     height: 2.5rem;
 }
+
 #navbar .navbar-container .burger-menu .menu-box {
     margin-top: 0.5rem;
 }
+
 #navbar .navbar-container .burger-menu .menu-box ul li {
     display: flex;
     flex-direction: column;
@@ -72,8 +85,9 @@ body {
     opacity: 0.9;
     width: 7rem;
 }
+
 #navbar .navbar-container .burger-menu .menu-box ul li a:hover {
-   color: var(--dark-text);
+    color: var(--dark-text);
 }
 
 #navbar .navbar-container .burger-menu .menu-box ul li a {
@@ -90,41 +104,51 @@ body {
     align-items: center;
     list-style: none;
 }
+
 #navbar .navbar-container ul li {
     padding: 1rem 2rem;
 }
+
 #navbar .navbar-container .nav ul li a {
     text-decoration: none;
     font-weight: bold;
     color: var(--bright-text);
 }
+
 #navbar .navbar-container .nav ul li:not(:last-of-type):hover a {
     color: var(--light-text);
     cursor: pointer;
 }
+
 .english .de, .german .en {
     display: none;
     visibility: hidden;
 }
+
 #enLangSwitcher, #deLangSwitcher {
     transition: box-shadow 0.3s ease-in-out;
 }
+
 .english #enLangSwitcher, .german #deLangSwitcher {
     box-shadow: 0 0 0 2px var(--bright-text);
 }
+
 main {
     margin: 3.42rem auto 0 auto;
 }
-    /* showcase */
+
+/* showcase */
 .showcase-container {
     padding: 0 1rem 1rem 1rem;
     background: var(--dark-background);
 
 }
+
 .showcase-container .showcase-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 #showcase .showcase-container .showcase-info .showcase-text {
     display: flex;
     flex-direction: column;
@@ -133,6 +157,7 @@ main {
     clip-path: polygon(0 0, 75% 0, 100.09% 57.2%, 100.1% 100%, 0 100%);
 
 }
+
 #showcase .showcase-container .showcase-info .showcase-text h1 {
     padding: 1.5rem 0;
     color: var(--dark-text);
@@ -140,9 +165,11 @@ main {
     font-family: 'Dancing Script', curcive;
     font-size: 3rem;
 }
+
 #showcase .showcase-container .showcase-info .showcase-text p {
     color: var(--bright-text);
 }
+
 #showcase .showcase-container .showcase-info .showcase-text p:first-of-type {
     padding-top: 2rem;
     padding-bottom: 0.5rem;
@@ -152,8 +179,9 @@ main {
     display: flex;
 
 }
+
 #showcase .showcase-container .showcase-info .showcase-img img {
-   width: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 19% 100%, 0 56.9%);
@@ -161,23 +189,27 @@ main {
 
 
 }
+
 /* about */
 #about-me .about-me-container {
     padding: 0 1rem 1rem 1rem;
     background: var(--dark-background);
 }
+
 #about-me .about-me-container .about-text {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 3rem 3rem 3rem;
 
 }
+
 #about-me .about-me-container .about-text h4 {
     padding-top: 1rem;
 }
+
 /* skills */
 #skills .skills-container {
-    padding:0 1rem 1rem 1rem;
+    padding: 0 1rem 1rem 1rem;
     background: var(--dark-background);
 }
 
@@ -196,7 +228,7 @@ main {
     padding-bottom: 2rem;
 }
 
-/* portfolio */
+/* portfolio with slider*/
 #portfolio .portfolio-container {
     padding: 0 1rem 1rem 1rem;
     background: var(--dark-background);
@@ -208,13 +240,18 @@ main {
 
 }
 
-#portfolio .portfolio-container .portfolio-info .slider-wraper .slider_container {
+#portfolio .portfolio-container .portfolio-info .slider-wraper .slider-container {
     position: relative;
     width: border-box;
+
 }
 
-#portfolio .portfolio-container .portfolio-info .slider-wraper .slider-container
-.slide {
+#portfolio .portfolio-container .portfolio-info .slider-wraper .slider-container .slide {
+    display: none;
+}
+
+
+#portfolio .portfolio-container .portfolio-info .slider-wraper .slider-container .active {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -224,47 +261,54 @@ main {
     margin: 0 auto;
 }
 
+
 #portfolio .portfolio-container .portfolio-info .slider-wraper
 .slider-container .slide img {
-    width: 80%;
+    max-width: 80%;
+    height: 50vh;
     margin: 0 auto;
 }
 
-
 #portfolio .portfolio-container .portfolio-info .slider-wraper
-.slider-container .slick-arrow {
+.slider-container .prev {
     position: absolute;
     cursor: pointer;
     font-size: 25px;
     border: transparent;
-    padding: 0.7rem 1.2rem 1rem 1.2rem;
+    padding: 1rem 1.2rem;
     border-radius: 50%;
     bottom: 50%;
+    left: 1rem;
 }
 
-#portfolio .portfolio-container .portfolio-info .slider-wraper .slider-container
-.slick-prev {
-    left: 3rem;
-    z-index: 999;
+#portfolio .portfolio-container .portfolio-info .slider-wraper
+.slider-container .next {
+    position: absolute;
+    cursor: pointer;
+    font-size: 25px;
+    border: transparent;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    bottom: 50%;
+    right: 1rem;
 }
 
-#portfolio .portfolio-container .portfolio-info .slider-wraper .slider-container
-.slick-next {
-    right: 3rem;
-}
 #portfolio .portfolio-container .portfolio-info .slider-wraper
 .slider-container .slide a {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
 #portfolio .portfolio-container .portfolio-info .slider-wraper
 .slider-container .slide a {
     text-decoration: none;
 }
+
 #portfolio .portfolio-container .portfolio-info .slider-wraper
 .slider-container .slide a > span {
     color: var(--dark-text);
 }
+
 #portfolio .portfolio-container .portfolio-info .slider-wraper
 .slider-container .slide a > span:hover {
     color: var(--bright-text);
@@ -278,17 +322,20 @@ main {
 }
 
 #contacts .contacts-container div {
-   display: block;
+    display: block;
     text-align: center;
 }
+
 #contacts .contacts-container div a {
     text-decoration: none;
     color: var(--bright-text);
 }
+
 #contacts .contacts-container div a:hover {
     color: var(--light-text);
     font-weight: bold;
 }
+
 #contacts .contacts-container div a i {
     padding: 1rem;
 }
