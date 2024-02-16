@@ -1,3 +1,4 @@
+
 window.addEventListener('DOMContentLoaded', () => {
     const langSwitcher = (e) => document.querySelector('body').className = e.target.dataset.langClass;
     const enableLangSwitcher = (elementId) => document
